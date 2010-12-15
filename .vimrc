@@ -9,7 +9,7 @@ set shiftwidth=4
 set softtabstop=0
 set noexpandtab
 
-" Something
+" Useful settings
 set nocompatible
 set showmatch
 set ruler
@@ -20,6 +20,7 @@ set hlsearch
 " Formatting
 set autoindent
 set smartindent
+inoremap # X#
 
 " Mouse
 set mouse=a
