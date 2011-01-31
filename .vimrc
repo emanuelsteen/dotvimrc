@@ -35,3 +35,13 @@ set number
 " Python wants spaces instead of tabs
 autocmd FileType python set expandtab
 
+" Mark lines longer than 80 characters
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.*/
+
+" Windows specific
+"set nobackup
+"set nowritebackup
+"set noswapfile
+"behave xterm
+
