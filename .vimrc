@@ -36,8 +36,14 @@ set number
 autocmd FileType python set expandtab
 
 " Mark lines longer than 80 characters
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+" Use colorcolumn if the feature exists, available since VIM 7.3.
+if exists("+colorcolumn")
+highlight ColorColumn ctermbg=grey ctermfg=black
+set colorcolumn=80
+else
+highlight OverLength ctermbg=red ctermfg=white
 match OverLength /\%81v.*/
+endif
 
 " Windows specific
 "set nobackup
