@@ -1,25 +1,44 @@
+" Compatibility? Nuff said...
+set nocompatible
+
 " Syntax highlight
 syntax on
 colorscheme default
 set background=dark
+set t_Co=256
 
 " Tab width
 set tabstop=4
 set shiftwidth=4
 set softtabstop=0
+set smarttab
 set noexpandtab
 
-" Useful settings
-set nocompatible
+" Useful GUI settings
 set showmatch
 set ruler
 set showcmd
+set cursorline
+
+" Show line number
+set number
+
+" Highlight and instantly jump to matches during search
 set incsearch
 set hlsearch
+
+" Always show status line
+set laststatus=2
+
+" Ignore case for searches unless it contains non-lowercase letters
+set ignorecase
+set smartcase
 
 " Formatting
 set autoindent
 set smartindent
+
+" Also indent comments
 inoremap # X#
 
 " Mouse
@@ -29,14 +48,11 @@ set mouse=a
 set tags+=/usr/include/tags
 set tags+=/home/emst/src/ecode3/trunk/tags
 
-" Line number
-set number
-
-" Improved tab completion for files and buffers
+" Improved tab completion for files and buffers (bash style)
 set wildmenu
 set wildmode=list:longest
 
-" Python wants spaces instead of tabs
+" When editing a Python file use spaces instead of tabs
 autocmd FileType python set expandtab
 
 " Mark lines longer than 80 characters
