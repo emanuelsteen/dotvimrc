@@ -32,6 +32,10 @@ set tags+=/home/emst/src/ecode3/trunk/tags
 " Line number
 set number
 
+" Improved tab completion for files and buffers
+set wildmenu
+set wildmode=list:longest
+
 " Python wants spaces instead of tabs
 autocmd FileType python set expandtab
 
