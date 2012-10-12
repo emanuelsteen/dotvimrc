@@ -12,7 +12,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=0
 set smarttab
-set noexpandtab
+set expandtab
 
 " Useful GUI settings
 set showmatch
@@ -53,7 +53,7 @@ set wildmenu
 set wildmode=list:longest
 
 " When editing a Python file use spaces instead of tabs
-autocmd FileType python set expandtab
+"autocmd FileType python set expandtab
 
 " Mark lines longer than 80 characters
 " Use colorcolumn if the feature exists, available since VIM 7.3.
