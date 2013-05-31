@@ -3,6 +3,7 @@ set nocompatible
 
 " Syntax highlight
 syntax on
+let python_highlight_all = 1
 colorscheme default
 set background=dark
 set t_Co=256
@@ -65,9 +66,14 @@ highlight OverLength ctermbg=red ctermfg=white
 match OverLength /\%81v.*/
 endif
 
+set textwidth=80
+
 " Match and highlight trailing whitespaces at end of line
 highlight BadWhitespace ctermbg=red
-match BadWhitespace /\s\+$/
+autocmd BufWinEnter * match BadWhitespace /\s\+$/
+autocmd InsertEnter * match BadWhitespace /\s\+$/
+autocmd InsertLeave * match BadWhitespace /\s\+$/
+"autocmd BufWinLeave * match BadWhitespace /\s\+$/
 
 " Windows specific
 "set nobackup
