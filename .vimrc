@@ -75,6 +75,9 @@ autocmd InsertEnter * match BadWhitespace /\s\+$/
 autocmd InsertLeave * match BadWhitespace /\s\+$/
 "autocmd BufWinLeave * match BadWhitespace /\s\+$/
 
+" Toogle showing unprintable characters with Ctrl-P
+map <C-P> :set invlist<CR>
+
 " Windows specific
 "set nobackup
 "set nowritebackup
