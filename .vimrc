@@ -78,6 +78,13 @@ autocmd InsertLeave * match BadWhitespace /\s\+$/
 " Toogle showing unprintable characters with Ctrl-P
 map <C-P> :set invlist<CR>
 
+" Center screen on search
+nmap n nzz
+nmap N Nzz
+
+" Keep context around current line
+set scrolloff=10
+
 " Windows specific
 "set nobackup
 "set nowritebackup
