@@ -85,6 +85,9 @@ nmap N Nzz
 " Keep context around current line
 set scrolloff=10
 
+" Don't wrap search
+set nowrapscan
+
 " Windows specific
 "set nobackup
 "set nowritebackup
