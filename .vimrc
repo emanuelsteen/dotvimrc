@@ -88,6 +88,13 @@ set scrolloff=10
 " Don't wrap search
 set nowrapscan
 
+" Fold code
+set foldmethod=syntax
+autocmd FileType java set foldnestmax=2
+autocmd FileType java set foldlevel=1
+autocmd FileType c set foldnestmax=1
+nmap <Space> za
+
 " Windows specific
 "set nobackup
 "set nowritebackup
