@@ -96,8 +96,11 @@ autocmd FileType c set foldnestmax=1
 nmap <Space> za
 
 " Windows specific
-"set nobackup
-"set nowritebackup
-"set noswapfile
-"behave xterm
+if has("win32")
+    source $VIMRUNTIME/mswin.vim
+    set nobackup
+    set nowritebackup
+    set noswapfile
+    behave xterm
+endif
 
