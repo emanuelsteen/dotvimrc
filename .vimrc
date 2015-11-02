@@ -93,6 +93,7 @@ set foldmethod=syntax
 autocmd FileType java set foldnestmax=2
 autocmd FileType java set foldlevel=1
 autocmd FileType c set foldnestmax=1
+autocmd FileType cpp set foldnestmax=1
 nmap <Space> za
 
 " Windows specific
