@@ -66,7 +66,7 @@ highlight OverLength ctermbg=red ctermfg=white
 match OverLength /\%81v.*/
 endif
 
-set textwidth=80
+set textwidth=0
 
 " Match and highlight trailing whitespaces at end of line
 highlight BadWhitespace ctermbg=red
