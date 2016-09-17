@@ -105,3 +105,9 @@ if has("win32")
     behave xterm
 endif
 
+if has("win32")
+    command Present :colorscheme default | :set bg=light | set guifont=Consolas:h16:cANSI
+else
+    command Present :colorscheme default | :set bg=light | set guifont=Monospace\ 16
+endif
+
