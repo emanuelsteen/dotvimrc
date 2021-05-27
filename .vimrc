@@ -90,10 +90,14 @@ set nowrapscan
 
 " Fold code
 set foldmethod=syntax
+set foldnestmax=2
 autocmd FileType java set foldnestmax=2
 autocmd FileType java set foldlevel=1
 autocmd FileType c set foldnestmax=1
 autocmd FileType cpp set foldnestmax=1
+autocmd FileType go set foldnestmax=1
+autocmd FileType go set foldcolumn=1
+
 nmap <Space> za
 
 " Windows specific
